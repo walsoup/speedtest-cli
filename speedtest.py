@@ -462,6 +462,8 @@ if HTTPSConnection:
             self._tunnel_host = None
 
             HTTPSConnection.__init__(self, *args, **kwargs)
+            if ssl and hasattr(ssl, "create_default_context") and not hasattr(self, "_context"):
+                self._context = ssl.create_default_context()
 
             self.timeout = timeout
             self.source_address = source_address
