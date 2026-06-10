@@ -16,7 +16,7 @@
 
 # Coding Guidelines
 
-In general, I follow strict pep8 and pyflakes. All code must pass these tests. Since we support python 2.4-3.4 and pypy, pyflakes reports unknown names in python 3.  pyflakes is run in python 2.7 only in my tests.
+In general, I follow strict pep8 and pyflakes. All code must pass these tests. Since we support python 2.4-3.4 and pypy, pyflakes reports unknown names in python 3. pyflakes is run in python 2.7 only in my tests.
 
 ## Some other points
 
